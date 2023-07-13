@@ -14,12 +14,6 @@ class ClassCom extends React.Component {
                     <li>Contact us</li>
                 </ul>
             </nav>
-            <div className='main'>
-                Main Content
-            </div>
-            <footer className='footer'>
-                Footer
-            </footer>
         </div>
     }
 }
