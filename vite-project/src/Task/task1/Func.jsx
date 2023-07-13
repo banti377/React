@@ -12,4 +12,4 @@ function Fun() {
     )
 }
 
-export default Fun; 
+export default Fun;
