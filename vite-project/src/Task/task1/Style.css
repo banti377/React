@@ -18,8 +18,8 @@ nav {
 nav ul {
     display: flex;
     flex: 1;
-    width: 50%;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-evenly;
     font-size: 30px;
 }
 
