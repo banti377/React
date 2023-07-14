@@ -7,8 +7,8 @@ import Fun from './Task/task1/Func.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <App /> */}
-    <ClassCom />
-    <Fun />
+    <App />
+    {/* <ClassCom />
+    <Fun /> */}
   </React.StrictMode>,
 )
