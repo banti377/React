@@ -1,10 +1,10 @@
 import React from 'react'
-
+import './Style.css'
 
 class ClassCom extends React.Component {
     render() {
         return <div>
-            <div>
+            <div className='head'>
                 Header
             </div>
             <nav>
@@ -14,12 +14,6 @@ class ClassCom extends React.Component {
                     <li>Contact us</li>
                 </ul>
             </nav>
-            <div>
-                Main Content
-            </div>
-            <footer>
-                Footer
-            </footer>
         </div>
     }
 }
