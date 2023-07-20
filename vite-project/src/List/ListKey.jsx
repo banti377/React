@@ -14,9 +14,9 @@ export default function ListKey() {
                         <li key={i} onClick={() => onclick()}>
                             {e}
                         </li>
-                    )
+                    );
                 })}
             </ul >
         </>
-    )
+    );
 }
