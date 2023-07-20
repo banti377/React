@@ -1,11 +1,15 @@
 import React, { useState } from 'react'
 import './App.css'
-import ListKey from './List/ListKey'
+import ClassCom from './component/Classcom';
+import Fun from './component/Func';
+import ListKey from './List/ListKey';
 
 
 function App() {
   return (
     <div>
+      <ClassCom />
+      <Fun />
       <ListKey />
     </div>
   )
