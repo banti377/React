@@ -3,14 +3,16 @@ import './App.css'
 import ClassCom from './component/Classcom';
 import Fun from './component/Func';
 import ListKey from './List/ListKey';
+import Test from './map/Test';
 
 
 function App() {
   return (
     <div>
-      <ClassCom />
+      <Test />
+      {/* <ClassCom />
       <Fun />
-      <ListKey />
+      <ListKey /> */}
     </div>
   )
 

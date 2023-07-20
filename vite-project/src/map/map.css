@@ -1,0 +1,7 @@
+.data {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    color: white;
+    background-color: lightcoral;
+}
