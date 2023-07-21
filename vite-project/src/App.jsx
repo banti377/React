@@ -4,12 +4,14 @@ import ClassCom from './component/Classcom';
 import Fun from './component/Func';
 import ListKey from './List/ListKey';
 import Test from './map/Test';
+import InputCom from './input/InputCom';
 
 
 function App() {
   return (
     <div>
-      <Test />
+      <InputCom />
+      {/* <Test /> */}
       {/* <ClassCom />
       <Fun />
       <ListKey /> */}
