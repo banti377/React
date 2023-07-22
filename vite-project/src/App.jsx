@@ -5,14 +5,16 @@ import Fun from './component/Func';
 import ListKey from './List/ListKey';
 import Test from './map/Test';
 import InputCom from './input/InputCom';
+import InputTask from './input/InputTask';
 
 
 function App() {
   return (
     <div>
-      <InputCom />
-      {/* <Test /> */}
-      {/* <ClassCom />
+      <InputTask />
+      {/* <InputCom /> */}
+      {/* <Test />
+      <ClassCom />
       <Fun />
       <ListKey /> */}
     </div>
