@@ -1,22 +1,25 @@
 import React, { useState } from 'react'
 import './App.css'
-import ClassCom from './component/Classcom';
-import Fun from './component/Func';
-import ListKey from './List/ListKey';
-import Test from './map/Test';
-import InputCom from './input/InputCom';
-import InputTask from './input/InputTask';
+
+import Fun from './1.component/Func';
+import ListKey from './8.List/ListKey';
+import Test from './6.map/Test';
+import InputCom from './9.input/InputCom';
+import InputTask from './9.input/InputTask';
+import ClassCom from './1.component/Classcom';
+import MultipleInputCom from './9.input/MultipleInputCom';
 
 
 function App() {
   return (
     <div>
-      <InputTask />
+      <MultipleInputCom />
+      {/* <InputTask /> */}
       {/* <InputCom /> */}
-      {/* <Test />
-      <ClassCom />
-      <Fun />
-      <ListKey /> */}
+      {/* <Test /> */}
+      {/* <ClassCom /> */}
+      {/* <Fun /> */}
+      {/* <ListKey /> */}
     </div>
   )
 
