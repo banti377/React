@@ -30,7 +30,7 @@ export default function MultipleInputCom() {
 
     return (
         <>
-            <div className='inputform'>
+            <div className='inputForm'>
                 <label htmlFor="name">Name :</label>
                 <input value={user.name} type="text" onChange={(e) => getData(e)} name="name" placeholder='please enter your name' id="name" />
                 <label htmlFor="eamil">Email :</label>
