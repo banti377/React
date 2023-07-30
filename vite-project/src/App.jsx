@@ -8,12 +8,14 @@ import InputCom from './9.input/InputCom';
 import InputTask from './9.input/InputTask';
 import ClassCom from './1.component/Classcom';
 import MultipleInputCom from './9.input/MultipleInputCom';
+import MultipleInputTask from './9.input/MultipleInputTask';
 
 
 function App() {
   return (
     <div>
-      <MultipleInputCom />
+      <MultipleInputTask />
+      {/* <MultipleInputCom /> */}
       {/* <InputTask /> */}
       {/* <InputCom /> */}
       {/* <Test /> */}

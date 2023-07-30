@@ -4,9 +4,9 @@ import Table from 'react-bootstrap/Table'
 
 export default function MultipleInputCom() {
     let [user, setUser] = useState({
+        name: "",
         email: "",
-        password: "",
-        name: ""
+        password: ""
     });
 
     let [userData, setUserData] = useState([])
@@ -22,9 +22,9 @@ export default function MultipleInputCom() {
     function submitHandler() {
         setUserData([...userData, user])
         setUser({
+            name: "",
             email: "",
-            password: "",
-            name: ""
+            password: ""
         })
     }
 
