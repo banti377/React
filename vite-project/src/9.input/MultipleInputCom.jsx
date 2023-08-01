@@ -18,7 +18,7 @@ export default function MultipleInputCom() {
         setUser({ ...user, [e.target.name]: e.target.value })
     }
 
-    // ad object(user state) into array(userData)
+    // add object(user state) into array(userData)
     function submitHandler() {
         setUserData([...userData, user])
         setUser({
