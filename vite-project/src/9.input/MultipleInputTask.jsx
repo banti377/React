@@ -52,30 +52,31 @@ export default function MultipleInputTask() {
         setIndex(index)
     }
     return (
-        <div className='inputform'>
+        <>
             <Form>
-                <Form.Group className="mb-3">
-                    <Form.Label>Company Name :</Form.Label>
-                    <Form.Control value={user.company} type="text" onChange={(e) => getData(e)} name="company" placeholder='Please enter your company name' id="company" />
-                </Form.Group>
-                <Form.Group className="mb-3">
-                    <Form.Label>Company's CEO Name :</Form.Label>
-                    <Form.Control value={user.ceo} type="text" onChange={(e) => getData(e)} name="ceo" placeholder='Please enter your company,s CEO name' id="ceo" />
-                </Form.Group>
-                <Form.Group className="mb-3">
-                    <Form.Label>Net Worth :</Form.Label>
-                    <Form.Control value={user.networth} type="text" onChange={(e) => getData(e)} name="networth" placeholder='Please enter your net worth' id="networth" />
-                </Form.Group>
-                <Form.Group className="mb-3">
-                    <Form.Label>Country :</Form.Label>
-                    <Form.Control value={user.country} type="text" onChange={(e) => getData(e)} name="country" placeholder='Please enter your net worth' id="country" />
-                </Form.Group>
-                <Button variant="primary" onClick={() => submitHandler()}>{isUpdate ? "Update" : "Submit"}</Button>
-
+                <div className='inputform'>
+                    <Form.Group className="mb-3">
+                        <Form.Label>Company Name :</Form.Label>
+                        <Form.Control value={user.company} type="text" onChange={(e) => getData(e)} name="company" placeholder='Please enter your company name' id="company" />
+                    </Form.Group>
+                    <Form.Group className="mb-3">
+                        <Form.Label>Company's CEO Name :</Form.Label>
+                        <Form.Control value={user.ceo} type="text" onChange={(e) => getData(e)} name="ceo" placeholder='Please enter your company,s CEO name' id="ceo" />
+                    </Form.Group>
+                    <Form.Group className="mb-3">
+                        <Form.Label>Net Worth :</Form.Label>
+                        <Form.Control value={user.networth} type="text" onChange={(e) => getData(e)} name="networth" placeholder='Please enter your net worth' id="networth" />
+                    </Form.Group>
+                    <Form.Group className="mb-3">
+                        <Form.Label>Country :</Form.Label>
+                        <Form.Control value={user.country} type="text" onChange={(e) => getData(e)} name="country" placeholder='Please enter your net worth' id="country" />
+                    </Form.Group>
+                    <Button variant="primary" onClick={() => submitHandler()}>{isUpdate ? "Update" : "Submit"}</Button>
+                </div>
             </Form>
             <div>
                 {userData.length > 0 && (
-                    <Table className='mt-4' striped bordered hover>
+                    <Table className='inputTable' striped bordered hover>
                         <thead>
                             <tr>
                                 <th>sr.</th>
@@ -97,10 +98,9 @@ export default function MultipleInputTask() {
                                         <td>{e.networth}</td>
                                         <td>{e.country}</td>
                                         <td>
-                                            <Button variant="danger" onClick={() => deleteHandler(i)}>Delete</Button>
-                                            <Button variant="info" onClick={() => updateHandler(e, i)}>Update</Button>
+                                            <Button variant="danger" onClick={() => deleteHandler(i)}> Delete </Button>
+                                            <Button variant="info" onClick={() => updateHandler(e, i)}> Update </Button>
                                         </td>
-
                                     </tr>
                                 )
                             })}
@@ -108,6 +108,6 @@ export default function MultipleInputTask() {
                     </Table>
                 )}
             </div>
-        </div>
+        </>
     )
 }
