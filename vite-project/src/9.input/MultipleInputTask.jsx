@@ -76,7 +76,7 @@ export default function MultipleInputTask() {
             </Form>
             <div>
                 {userData.length > 0 && (
-                    <Table className='inputTable' striped bordered hover>
+                    <Table className='inputTable'>
                         <thead>
                             <tr>
                                 <th>sr.</th>
@@ -85,7 +85,6 @@ export default function MultipleInputTask() {
                                 <th>Net Worth</th>
                                 <th>Country</th>
                                 <th>Action</th>
-
                             </tr>
                         </thead>
                         <tbody>

@@ -9,12 +9,14 @@ import InputTask from './9.input/InputTask';
 import ClassCom from './1.component/Classcom';
 import MultipleInputCom from './9.input/MultipleInputCom';
 import MultipleInputTask from './9.input/MultipleInputTask';
+import RegForm from './9.input/RegForm';
 
 
 function App() {
   return (
     <div>
-      <MultipleInputTask />
+      <RegForm />
+      {/* <MultipleInputTask /> */}
       {/* <MultipleInputCom /> */}
       {/* <InputTask /> */}
       {/* <InputCom /> */}

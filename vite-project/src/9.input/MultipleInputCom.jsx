@@ -31,11 +31,11 @@ export default function MultipleInputCom() {
     return (
         <>
             <div className='inputForm'>
-                <label htmlFor="name">Name :</label>
+                <label htmlFor="">Name :</label>
                 <input value={user.name} type="text" onChange={(e) => getData(e)} name="name" placeholder='please enter your name' id="name" />
-                <label htmlFor="eamil">Email :</label>
+                <label htmlFor="">Email :</label>
                 <input value={user.email} type="email" onChange={(e) => getData(e)} name="email" placeholder='please enter your email' id="email" />
-                <label htmlFor="password">Passoword :</label>
+                <label htmlFor="">Passoword :</label>
                 <input value={user.password} type="text" onChange={(e) => getData(e)} name="password" placeholder='please enter your password' id="pass" />
                 <button onClick={() => submitHandler()}>Submit</button>
             </div>
