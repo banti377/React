@@ -23,6 +23,7 @@ export default function RegForm() {
         setUser({ ...user, [e.target.name]: e.target.value })
     }
 
+    // submit button
     function submitHandler() {
         if (!user.firstname || !user.middlename || !user.lastname || !user.address || !user.dob || !user.email || !user.gender || !user.mobile) {
             alert("Please fill in all the fields.");
@@ -57,6 +58,7 @@ export default function RegForm() {
         }
     }
 
+    // Delete button
     function deleteHandler(index) {
 
         let shouldDelete = confirm("Are you sure you want to delete")
@@ -67,12 +69,14 @@ export default function RegForm() {
         }
     }
 
+    // update button
     function updateHandler(ele, index) {
         setUser(ele)
         setIsUpdate(true)
         setIndex(index)
     }
 
+    // deleteall button
     function deleteAllHandler() {
         let shouldDeleteAll = confirm("Are you sure you want to delete all records?");
 
@@ -141,7 +145,7 @@ export default function RegForm() {
                 <div className="form-field">
                     <label>Email :</label>
                     <input value={user.email}
-                        type="text"
+                        type="email"
                         name="email"
                         id="email"
                         onChange={(e) => getData(e)}
@@ -154,8 +158,8 @@ export default function RegForm() {
                         <input
                             type="radio"
                             name="gender"
-                            value="male"
-                            checked={user.gender === "male"}
+                            value="Male"
+                            checked={user.gender === "Male"}
                             onChange={(e) => getData(e)}
                         />
                         Male
@@ -164,8 +168,8 @@ export default function RegForm() {
                         <input
                             type="radio"
                             name="gender"
-                            value="female"
-                            checked={user.gender === "female"}
+                            value="Female"
+                            checked={user.gender === "Female"}
                             onChange={(e) => getData(e)}
                         />
                         Female
@@ -174,8 +178,8 @@ export default function RegForm() {
                         <input
                             type="radio"
                             name="gender"
-                            value="other"
-                            checked={user.gender === "other"}
+                            value="Other"
+                            checked={user.gender === "Other"}
                             onChange={(e) => getData(e)}
                         />
                         Other
