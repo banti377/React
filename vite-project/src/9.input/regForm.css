@@ -418,8 +418,13 @@ input[type="radio"] {
     font-family: Arial, Helvetica, sans-serif;
     transition: 0.4s;
     border: 2px solid lightskyblue !important;
+    border-collapse: separate !important;
     box-shadow: 0px 0px 10px 0px rgb(47, 165, 224);
 
+}
+
+.table>thead {
+    vertical-align: middle !important;
 }
 
 .table th,

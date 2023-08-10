@@ -73,6 +73,14 @@ export default function RegForm() {
         setIndex(index)
     }
 
+    function deleteAllHandler() {
+        let shouldDeleteAll = confirm("Are you sure you want to delete all records?");
+
+        if (shouldDeleteAll) {
+            setUserData([]);
+        }
+    }
+
     return (
         <>
             <div className='reginput'>
@@ -188,6 +196,7 @@ export default function RegForm() {
                 <button onClick={() => submitHandler()}>{isUpdate ? "Update" : "Submit"}</button>
             </div>
 
+
             {userData.length > 0 && (
                 <table className='table'>
                     <thead>
@@ -202,7 +211,6 @@ export default function RegForm() {
                             <th>Gender</th>
                             <th>Mobile Number</th>
                             <th>Action</th>
-
                         </tr>
                     </thead>
                     <tbody>
@@ -225,6 +233,11 @@ export default function RegForm() {
                                 </tr>
                             )
                         })}
+                        <tr>
+                            <td colSpan="10" className="delete-all-row">
+                                <Button variant="danger" onClick={() => deleteAllHandler()}>Delete All</Button>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             )}
