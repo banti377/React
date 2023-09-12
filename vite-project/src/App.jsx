@@ -11,13 +11,15 @@ import MultipleInputCom from './9.input/MultipleInputCom';
 import MultipleInputTask from './9.input/MultipleInputTask';
 import RegForm from './9.input/RegForm';
 import StopWatch from './stopwatch/StopWatch';
+import App2 from './18.Redux/App2';
 
 
 function App() {
   return (
     <div>
+      <App2 />
       {/* <StopWatch /> */}
-      <RegForm />
+      {/* <RegForm /> */}
       {/* <MultipleInputTask /> */}
       {/* <MultipleInputCom /> */}
       {/* <InputTask /> */}
