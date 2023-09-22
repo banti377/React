@@ -12,12 +12,13 @@ import MultipleInputTask from './9.input/MultipleInputTask';
 import RegForm from './9.input/RegForm';
 import StopWatch from './stopwatch/StopWatch';
 import App2 from './18.Redux/App2';
+import Apptoolkit from './19.react_toolkit/Apptoolkit';
 
 
 function App() {
   return (
     <div>
-      <App2 />
+      {/* <App2 /> */}
       {/* <StopWatch /> */}
       {/* <RegForm /> */}
       {/* <MultipleInputTask /> */}
@@ -28,6 +29,7 @@ function App() {
       {/* <ClassCom /> */}
       {/* <Fun /> */}
       {/* <ListKey /> */}
+      <Apptoolkit />
     </div>
   )
 
