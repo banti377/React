@@ -14,11 +14,8 @@ import RegForm from './9.input/RegForm';
 import StopWatch from './stopwatch/StopWatch';
 import App2 from './18.Redux/App2';
 import Apptoolkit from './19.react_toolkit/Apptoolkit';
-=======
 import React, { useState } from "react";
 import "./App.css";
->>>>>>> 3b8c544c4c1ff8e5e9fe7868e50fd385029ae492
-
 import Fun from "./1.component/Func";
 import ListKey from "./8.List/ListKey";
 import Test from "./6.map/Test";
@@ -36,7 +33,7 @@ function App() {
     <div>
       {/* <App2 /> */}
       {/* <StopWatch /> */}
-      <RegForm />
+      {/* <RegForm /> */}
       {/* <MultipleInputTask /> */}
       {/* <MultipleInputCom /> */}
       {/* <InputTask /> */}
