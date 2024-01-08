@@ -60,13 +60,8 @@ export default function RegForm() {
 
     // Delete button
     function deleteHandler(index) {
-
-        let shouldDelete = confirm("Are you sure you want to delete")
-
-        if (shouldDelete) {
-            userData.splice(index, 1)
-            setUserData([...userData])
-        }
+        userData.splice(index, 1)
+        setUserData([...userData])
     }
 
     // update button
